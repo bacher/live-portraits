@@ -1,0 +1,34 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+}
+
+.video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.canvasWrapper {
+    display: grid;
+    grid-template-areas: 'A';
+    width: 600px;
+    height: 600px;
+    place-items: center;
+
+    & > * {
+        grid-area: A;
+    }
+}
+
+.canvas {
+    width: 512px;
+    height: 512px;
+}

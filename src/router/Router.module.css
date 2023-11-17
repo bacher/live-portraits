@@ -1,0 +1,16 @@
+.wrapper {
+    display: flex;
+    gap: 20px;
+    padding-top: 100px;
+}
+
+.bigButton {
+    width: 200px;
+    height: 100px;
+    line-height: 100px;
+    white-space: nowrap;
+    background: #67bb67;
+    border-radius: 4px;
+    text-align: center;
+    color: #fff;
+}

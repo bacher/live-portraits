@@ -1,0 +1,11 @@
+.arrow {
+    --rotation-angle: 0;
+    width: 200px;
+    height: 600px;
+    background: url('/arrow.png');
+    background-size: 100% 100%;
+    /*mix-blend-mode: color;*/
+    mix-blend-mode: multiply;
+
+    transform: rotate(calc(1turn * var(--rotation-angle)));
+}

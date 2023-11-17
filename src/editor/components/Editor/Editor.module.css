@@ -1,0 +1,103 @@
+.startButton {
+    width: 200px;
+    height: 48px;
+    background: #48d748;
+    border-radius: 4px;
+    font-size: 20px;
+}
+
+.countdown {
+    font-size: 380px;
+}
+
+.results {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    gap: 8px;
+    background: rgba(0,0,0, 0.8);
+}
+
+.resultsGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+}
+
+.frameImage {
+    width: 140px;
+    height: 140px;
+}
+
+.resultsCircle {
+    display: grid;
+    grid-template-areas: 'A';
+    place-items: center;
+    width: 600px;
+    height: 600px;
+
+    & > * {
+        grid-area: A;
+    }
+}
+
+.circleImage {
+    --angle: 0;
+
+    --angle-turn: calc(1turn * var(--angle));
+    --angle-turn-negative: calc(-1 * var(--angle-turn));
+
+    width: 140px;
+    height: 140px;
+    transform: rotate(var(--angle-turn)) translate(0, 240px) rotate(var(--angle-turn-negative));
+}
+
+.finalQuestion {
+    text-align: center;
+}
+
+.mainQuestion {
+    font-size: 40px;
+    line-height: 48px;
+    color: green;
+}
+
+.buttonWrapper {
+    margin-top: 18px;
+}
+
+.tryAgainButton {
+    font-size: 20px;
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    background: #ffa1a1;
+    white-space: nowrap;
+}
+
+.finalSubQuestion {
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.actions {
+    display: flex;
+    gap: 8px;
+    z-index: 1;
+}
+
+.accountName {
+    width: 280px;
+    height: 48px;
+    padding: 0 10px;
+    font-size: 18px;
+}
+
+.sendButton {
+    align-self: center;
+    width: 200px;
+    height: 48px;
+    background: #48d748;
+    border-radius: 4px;
+    font-size: 20px;
+}

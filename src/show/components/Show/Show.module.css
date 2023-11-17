@@ -1,0 +1,41 @@
+.cursor {
+    /*cursor: url('/postgresql-icon.png'), auto;*/
+    cursor: url('/cursor5.png') 22 22, auto;
+    /*cursor: url('https://res.cloudinary.com/dvkugaw3b/image/upload/v1641562028/cursor_ad12rf.png'), auto;*/
+}
+
+.wrapper {
+}
+
+.header {
+    display: flex;
+    gap: 5px;
+    padding: 20px 0;
+}
+
+.grid {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.member {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.memberAvatar {
+    width: 200px;
+    height: 200px;
+}
+
+.addNew {
+    width: 200px;
+    height: 100px;
+    line-height: 100px;
+    background: #65da65;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 24px;
+}
